@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body style="background-color: aliceblue;overflow-x: hidden;">
+    <nav>
+        <ul>
+            <li class="nav-item" id="logo"><img src="logo.jpg" alt=""></li>
+            <li class="nav-item" id="location">delivary to
+                 <h4> <i class="fa-solid fa-location-dot"></i> india</h4>
+                 
+            </li>
+            <li class="nav-item" id="search">
+                <select name="" id="all">
+                   <option value="">ALL</option>
+                </select>
+                <input type="text" id="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                
+            </li>
+            <li class="nav-item" id="language">
+                <select name="" id="">
+                    <option value="">EN</option>
+                </select>
+            </li>
+            <li class="nav-item" id="account">
+                Hello,Signin <h4>Account& List</h4>
+            </li>
+            <li class="nav-item" id="order">
+                Return <H4>&Orders</H4>
+            </li>
+            <li class="nav-item" id="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+                
+            </li>
+        </ul>
+    </nav>
+    <div id="nav">
+        <ul>
+            <li><a href="#" id="alll" ><i class="fa-solid fa-bars"></i> All</a></li>
+            <li><a href="#" class="sub-nav-item">Today's Deals</a></li>
+            <li><a href="#" class="sub-nav-item">Customer Service</a></li>
+            <li><a href="#" class="sub-nav-item">Registry</a></li>
+            <li><a href="#" class="sub-nav-item">Gift Cards</a></li>
+            <li><a href="#" class="sub-nav-item">Sell</a></li>
+        </ul>
+    </div>
+    
+    <div id="carousel">
+        <div class="carsole"><img src="amzon_3.jpg" class="slide" alt="" id="first-image">
+            <img src="amazon_1.jpg" class="slide" alt="">
+            <img src="amazon_2.jpg" class="slide" alt="">
+            <img src="amazon_3.jpg" class="slide" alt="">
+            <img src="amazon_5.jpg" class="slide" alt="">
+            <img src="amzon_3.jpg" class="slide" alt="">
+            <img src="amazon_1.jpg" class="slide" alt="" id="last-image">
+        </div>
+      
+      
+    </div>
+    <button onclick="goPrivious()" id="btn1"><</button>
+    <button onclick="goNext()" id="btn2">></button>
+
+    <div id="container-price1">
+        <div class="grid-item" id="grid1">
+            <h2>Gaming accessories</h2>
+            <img class="game-item" src="headphone.jpg"  alt="">
+            <img class="game-item" src="keybord.jpg" alt="">
+               <P class="game-item">headPhone</P>
+               <p class="game-item">keybord</p>
+            <img class="game-item" src="mouse.jpg" alt="">
+            <img class="game-item" src="chairs.jpg" alt="">
+            <p class="game-item">Mouse game</p>
+            <p class="game-item">Chair game</p>
+            <p style="padding: 14px; text-decoration: none"><a href="#" style="text-decoration: none">See more</a></p>
+        </div>
+        <div class="grid-item" id="grid2">
+            <h2 style="margin: 12px;">Toys Under $30</h2>
+            <img src="baby-photo.jpg" alt="" style="height: 75%; width: 95%; padding-left: 12px;">
+            <p><a href="#" style="padding: 14px; text-decoration: none;">Shop now</a></p>
+        </div>
+        <div class="grid-item" id="grid3">
+            <h2 style="margin: 12px;">Home & Kitchen Under </h2>
+            <img src="home&k.jpg" alt="" style="height: 75%;  width: 95%; padding-left: 12px;" >
+            <p><a href="#" style="padding: 14px; text-decoration: none;">Shop now</a></p>
+        </div>
+        <div class="grid-item" id="grid4">
+            <div class="for-exp">
+                <h2 >Sign in the best experience</h2>
+                <button><a href="#" style="text-decoration: none;color:black;">Sign in securely</a></button>
+            </div>
+            <div class="boxOne">
+                <img src="box.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="grid-item" id="grid5">
+            <h2 style="margin: 12px;">Eletronic</h2>
+            <img src="eletornic.jpg" alt="" style="height: 75%; width: 99%; padding-left: 5px;">
+            <p><a href="#" style="padding: 14px; text-decoration: none;">See more</a></p>
+        </div>
+        <div class="grid-item" id="grid6">
+            <h2 style="margin: 12px;">Health & Personal</h2>
+            <img src="health.jpg" alt="" style="height: 75%;  width: 95%; padding-left: 12px;" >
+            <p><a href="#" style="padding: 14px; text-decoration: none;">Shop now</a></p>
+        </div>
+        <div class="grid-item" id="grid7">
+            <h2 style="margin: 12px;">Shop deals in Fashion</h2>
+            <div class="product-1"><img src="jeans.jpg" alt="" ><p>Jeans under $50</p></div>
+            <div class="product-1"><img src="tops.jpg" alt=""><p>Tops under $25</p></div>
+            <div class="product-1"><img src="dresses.jpg" alt=""><p>Dresses under $30</p></div>
+            <div class="product-1"><img src="shoes.jpg" alt=""><p>Shoes under $50</p></div>
+            <p><a href="#" style="padding: 14px; text-decoration: none;">Shop now</a></p>
+
+        </div>
+        <div class="grid-item" id="grid8"> 
+            <h2 style="margin: 12px;">Beauty picks</h2>
+            <img src="beauty.jpg" alt="" style="height: 75%;  width: 95%; padding-left: 12px;" >
+            <p><a href="#" style="padding: 14px; text-decoration: none;">Shop now</a></p>
+        
+        </div>
+    </div>
+    <div id="exciting-deal">
+        <h2  >Exciting Deal</h2><a href="#">See all deal</a>
+        <div class="exciting-product">
+        <div class="excitingitem">
+            <img src="Zojirushi.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="volleyball.jpg" alt="">
+            <button>25% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>59.97</h3><p>list Price: <span style="text-decoration: line-through;">$79.99</span></p>
+            <p style="margin-left: 12px;">MIKASH V200W, Volleyball</p>
+        </div>
+        <div class="excitingitem">
+            <img src="turning book.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="fiftyboo.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="infinitybook.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="heirloon.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="Zojirushi.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="mood.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="Zojirushi.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="the-skull.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="adidas-shoes.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="cherokee.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="my-grandfather.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="acurite.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+        <div class="excitingitem">
+            <img src="blulove.jpg" alt="">
+            <button>26% off</button> <h4>Deal</h4><br>
+            <h3><sup>$</sup>339.99</h3><p>list Price: <span style="text-decoration: line-through;">$462.50</span></p>
+            <p style="margin-left: 12px;">Zojirushi BB-PDC20BA Home ...</p>
+        </div>
+    </div>
+    <button class="item-slide-btm" id="item-privious" ><</button>  
+    <button class="item-slide-btm" id="item-next" onclick="next()">></button>  
+      
+    </div>
+
+    
+    <script src="script.js"></script> 
+</body>
+</html>
